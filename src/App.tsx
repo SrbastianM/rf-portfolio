@@ -1,16 +1,18 @@
 import './App.css'
-import Button from './presentation/components/molecules/button/Button'
+import HomePage from './pages/HomePage'
+import Navbar from './presentation/components/organism/navbar/Navbar'
+import { navItems } from './data/navItems'
 
 function App() {
 
   return (
     <>
-    <div className='flex items-center justify-center min-h-screen bg-gray-100'>
-      <Button title='Click' onClick={() => alert("¡Click!")}
-        className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded"
-        labelSize="md"/>
-    </div>
-     
+      <div className='min-w- screen-full flex flex-col'>
+          <nav className="w-full bg-neutral-100 text-black">
+          <Navbar items={navItems} />
+        </nav>
+      </div>
+      <HomePage/>
     </>
   )
 }

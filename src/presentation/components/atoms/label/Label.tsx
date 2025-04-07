@@ -2,9 +2,15 @@ import React from "react";
 import { LabelProps } from "./LabelProps";
 
 
-const Label : React.FC<LabelProps> = ({text, htmlFor,className}) => {
+const sizeClass = {
+  sm: "text-sm",
+  md: "text-base",
+  lg: "text-lg",
+}
+
+const Label : React.FC<LabelProps> = ({text, color, size, className}) => {
   return (
-    <label className={`text-sm font-medium text-gray-700 dark:text-amber-50 ${className} ${htmlFor}`}>{text}</label>
+    <span className={`${color}, ${sizeClass[size]} ${className}`}>{text}</span>
   )
 }
 

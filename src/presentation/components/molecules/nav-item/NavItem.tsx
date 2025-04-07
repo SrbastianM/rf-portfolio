@@ -6,10 +6,10 @@ Icon
 
 const NavItem : React.FC<NavItemProps> = ({label, icon, href="#", active}) => {
   return (
-    <a href={href} className={`flex items-center gap-2 px-4 py-2 rounded-md transition hover:bg-blue-100 ${
-        active ? "bg-blue-200 text-blue-700" : "text-gray-700"
+    <a href={href} className={`flex items-center gap-2 px-4 py-2 rounded-sm transition hover:bg-blue-100 ${
+        active ? "bg-indigo-50" : "text-gray-700"
       }`}  >
-    {icon && <Icon {...icon}/>}
+        {icon && <Icon {...icon}/>}
     <Label {...label}/>
     </a>
   )

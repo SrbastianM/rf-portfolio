@@ -8,9 +8,9 @@ const sizeClass = {
   lg: "text-lg",
 }
 
-const Label : React.FC<LabelProps> = ({text, color, size, className}) => {
+const Label : React.FC<LabelProps> = ({text, color, className}) => {
   return (
-    <span className={`${color}, ${sizeClass[size]} ${className}`}>{text}</span>
+    <span className={`${color}, ${sizeClass} ${className}`}>{text}</span>
   )
 }
 

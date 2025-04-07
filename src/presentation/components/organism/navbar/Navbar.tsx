@@ -4,11 +4,18 @@ import NavItem from "../../molecules/nav-item/NavItem";
 
 const Navbar : React.FC<NavbarProps> = ({items}) => {
   return (
-    <nav className="bg-white shadow-md px-6 py-3 flex gap-6 items-cente">
-      {items.map((item, index) => (
+    <div className="w-full shadow-sm">
+      <div className="max-w-full mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="text-xl font-bold">Srbastian</div>
+         <div className="flex space-x-8">
+          {items.map((item, index) => (
         <NavItem key={index} {...item}/>
-      ))}
-    </nav>
+      )     )}
+      </div>
+      </div>
+     
+    
+    </div>
   )
 }
 

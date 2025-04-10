@@ -10,8 +10,8 @@ const TextGroup : React.FC = () => {
   return (
     <div className="max-w-lg ml-10">
       <Title className="text-left mb-14" text={title} fontType="font-bold" fontSize="text-5xl"/>
-      <Paragraph fontWeight={"lighter"} text={testingTest}/>
-      <div className="flex left-0">
+      <Paragraph fontWeight={'lighter'} text={testingTest} fontSize={'text-lg'}/>
+      <div className="flex left-0 mt-4">
          <Button className="px-14 py-6 mt-6" size="sm" text="Contact" color="black"/>
       </div>
      

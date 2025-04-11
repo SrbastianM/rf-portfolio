@@ -3,5 +3,5 @@ export interface ImageProps {
   src?: string;
   className?: string;
   shadow?: boolean;
-  rounded?: boolean;
+  rounded?: string;
 }

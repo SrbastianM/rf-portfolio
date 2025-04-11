@@ -5,7 +5,7 @@ import Button from "../button/Button";
 
 const TextGroup : React.FC = () => {
   const testingTest = "Hello to everyone my name is Sebastian a software developer who enjoys the open source and constantly learn about the internet and how is transforming around the time ";
-  const title = "Sebastian Rodriguez "
+  const title = "Sebastian Rodriguez Murillo"
 
   return (
     <div className="max-w-lg ml-10">

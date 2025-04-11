@@ -9,8 +9,7 @@ export const navItems: NavItemProps[] = [
       className: fontLight,
       size: "sm",
     },
-    href: "/",
-    active: true
+    href: "/about", 
   },
   {
     label: {
@@ -18,7 +17,8 @@ export const navItems: NavItemProps[] = [
       className: fontLight,
       size: "sm",
     },
-    href: "/dashboard"
+    href: "/work",
+    active: true
   },
   {
     label: {
@@ -26,6 +26,6 @@ export const navItems: NavItemProps[] = [
       className: fontLight,
       size: "sm",
     },
-    href: "/logout"
+    href: "/contact"
   }
 ];

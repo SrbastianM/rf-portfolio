@@ -1,4 +1,5 @@
+import { CardInfoProps } from "../../molecules/card-info/CardInfoProps";
+
 export interface CardProps {
-  title: string,
-  text: string
+ cardInfo: CardInfoProps[];
 }

@@ -7,8 +7,8 @@ const Card : React.FC<CardProps> = ({cardInfo}) => {
   return (
     <div className="flex flex-row gap-3  justify-evenly bg-neutral-100">
       {
-        cardInfo.map((card) => (
-          <CardInfo {...card}/>
+        cardInfo.map((card, index) => (
+          <CardInfo key={index} {...card}/>
         ))
       }
     </div>
@@ -16,5 +16,3 @@ const Card : React.FC<CardProps> = ({cardInfo}) => {
 }
 
 export default Card;
-
-// forEach((index) => {} // 3 -? ) -> 

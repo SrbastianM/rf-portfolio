@@ -3,7 +3,8 @@
   import { TitleProps } from "../../atoms/title/TitleProps";
 
   export interface CardInfoProps {
-    image: ImageProps
+    image?: ImageProps
     title: TitleProps
-    paragraph: ParagraphProps
+    paragraph: ParagraphProps,
+    className?: string, 
   }

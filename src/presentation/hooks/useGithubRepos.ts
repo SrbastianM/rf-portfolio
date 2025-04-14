@@ -1,12 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-export interface Repo {
-  id: number,
-  name: string,
-  html_url: string,
-  description: string
-}
+import { Repo } from "../../domain/models/";
 
 export const useGithubRepos = () => {
   const api = import.meta.env.VITE_API_URI

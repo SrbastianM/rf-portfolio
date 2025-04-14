@@ -1,8 +1,8 @@
-import React, { JSX } from "react";
-import { IconProps } from "./IconProps";
+import React, { JSX } from 'react';
+import { IconProps } from './IconProps';
 
-const Icon : React.FC<IconProps> = ({name, size = 24, color = "black"}) => {
-  const icons : Record<string, JSX.Element> = {
+const Icon: React.FC<IconProps> = ({ name, size = 24, color = 'black' }) => {
+  const icons: Record<string, JSX.Element> = {
     check: (
       <svg
         width={size}
@@ -47,9 +47,9 @@ const Icon : React.FC<IconProps> = ({name, size = 24, color = "black"}) => {
         <line x1="12" y1="8" x2="12" y2="12" />
         <line x1="12" y1="16" x2="12" y2="16" />
       </svg>
-    )
-  }
+    ),
+  };
   return icons[name] || null;
-}
+};
 
 export default Icon;

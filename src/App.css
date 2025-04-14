@@ -1,6 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-#root { 
+#root {
   margin: 0 auto;
   text-align: center;
 }

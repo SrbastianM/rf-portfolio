@@ -1,31 +1,31 @@
-import { NavItemProps } from "../presentation/components/molecules/nav-item/NavItemProps";
+import { NavItemProps } from '../presentation/components/molecules/nav-item/NavItemProps';
 
-const fontLight = "light: text-black"
+const fontLight = 'light: text-black';
 
 export const navItems: NavItemProps[] = [
   {
     label: {
-      text: "About",
+      text: 'About',
       className: fontLight,
-      size: "sm",
+      size: 'sm',
     },
-    href: "/about", 
+    href: '/about',
   },
   {
     label: {
-      text: "Work",
+      text: 'Work',
       className: fontLight,
-      size: "sm",
+      size: 'sm',
     },
-    href: "/work",
-    active: true
+    href: '/work',
+    active: true,
   },
   {
     label: {
-      text: "Contact",
+      text: 'Contact',
       className: fontLight,
-      size: "sm",
+      size: 'sm',
     },
-    href: "/contact"
-  }
+    href: '/contact',
+  },
 ];

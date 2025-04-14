@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/domain/models/.ts"]
+  "include": ["src", "src/domain/models/Repo.ts"]
 }

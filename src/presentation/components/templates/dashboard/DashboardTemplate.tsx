@@ -14,7 +14,7 @@ const DashboardTemplate: React.FC<DashboardTemplateProps> = ({ children }) => {
         <Card cardInfo={cardInf} />
         <main className="flex-1 bg-gray-100 p-6">
           <br />
-          <Title text="PROJECTS" className="text-7xl" />
+          <Title text="Projects" className="text-7xl" />
           {children}
           <CardProjects />
         </main>

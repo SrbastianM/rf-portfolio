@@ -2,13 +2,16 @@ import React from 'react';
 import CardInfo from '../../molecules/card-info/CardInfo';
 import { useGithubRepos } from '../../../hooks/useGithubRepos';
 import { Repo } from '../../../../domain/models/Repo';
+import { useCardAnimation } from '../../../hooks/useCardAnimation';
 
 const CardProjects: React.FC = () => {
   const { repos, loading, error } = useGithubRepos();
+  
+  useCardAnimation(!loading && repos.length > 0);
 
   if (loading) return <p>Loading ...</p>;
   if (error) return <p>Error: {error}</p>;
-
+  
   const groupedRepos = repos.reduce((groups: Record<string, Repo[]>, repo) => {
     const lang = repo.language ?? 'Others';
     if (!groups[lang]) groups[lang] = [];
@@ -27,7 +30,7 @@ const CardProjects: React.FC = () => {
                 key={repo.id}
                 className="align-middle m-3 w-40 h-12"
                 paragraph={{ text: '', fontWeight: 'lighter' }}
-                title={{ text: repo.name, className: 'p-2.5' }}
+                title={{ text: repo.name, className: 'card-info p-2.5' }}
               />
             ))}
           </div>

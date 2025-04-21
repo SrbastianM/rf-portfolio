@@ -1,17 +1,20 @@
 import React from 'react';
-import { DashboardTemplateProps } from './DashboardTemplateProps';
 import HeroSection from '../../organism/hero-section/HeroSection';
 import Card from '../../organism/card/Card';
 import CardProjects from '../../organism/card-projects/CardProjects';
-import { cardInf } from '../../../../data/cardSkillInf';
 import Title from '../../atoms/title/Title';
+import SliderLanguages from '../../organism/slider-languages/SliderLanguages';
+import { cardInf } from '../../../../data/cardSkillInf';
+import { DashboardTemplateProps } from './DashboardTemplateProps';
+import { sliderItems } from '../../../../data/sliderItems';
 
 const DashboardTemplate: React.FC<DashboardTemplateProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen flex flex-col">
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col bg-neutral-100">
         <HeroSection />
         <Card cardInfo={cardInf} />
+        <SliderLanguages languages={sliderItems} />
         <main className="flex-1 bg-gray-100 p-6">
           <br />
           <Title text="Projects" className="text-7xl" />

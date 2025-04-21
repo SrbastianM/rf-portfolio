@@ -1,5 +1,8 @@
+import { IconType } from 'react-icons';
+
 export interface IconProps {
-  name: "check" | "close" | "alert";
+  icon: IconType;
   size?: number;
   color?: string;
+  isActive?: boolean;
 }

@@ -1,6 +1,11 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-#root { 
+#root {
   margin: 0 auto;
   text-align: center;
+}
+
+.card-info:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }

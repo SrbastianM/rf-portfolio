@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import { SliderElementsProps } from './SliderElementsProps';
 import Icon from '../../atoms/icon/Icon';
+import { useSliderElementAnimation } from '../../../hooks/useSliderElementAnimation';
 
 const SliderElements: React.FC<SliderElementsProps> = ({ icon, color, description, isActive }) => {
-  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef = useSliderElementAnimation(isActive);
 
   return (
     <div

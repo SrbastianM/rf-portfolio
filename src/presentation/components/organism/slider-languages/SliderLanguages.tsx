@@ -12,9 +12,8 @@ type LanguagesProps = {
 
 const SliderLanguages: React.FC<LanguagesProps> = ({ languages }) => {
   const { activeIndex, nextSlide, prevSlide, goToSlide } = useSlideNavigation(languages.length);
-  const slideRef = useSliderAnimation(activeIndex);
   return (
-    <div className="w-full max-w-3xl mx-auto my-8" ref={slideRef}>
+    <div className="w-full max-w-3xl mx-auto my-8">
       <div className="w-full px-12">
         <div className="absolute left-10 mt-16">
           <SliderControls direction="prev" onClick={prevSlide} />

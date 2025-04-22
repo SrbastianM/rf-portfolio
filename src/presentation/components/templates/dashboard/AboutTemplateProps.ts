@@ -1,5 +1,5 @@
 import React from 'react';
 
-export interface DashboardTemplateProps {
+export interface AboutTemplateProps {
   children: React.ReactNode;
 }

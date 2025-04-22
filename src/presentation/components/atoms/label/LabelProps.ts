@@ -1,5 +1,5 @@
 export interface LabelProps {
-  text: string;
+  text?: string;
   color?: string;
   size?: 'sm' | 'md' | 'lg';
   className?: string;

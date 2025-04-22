@@ -1,5 +1,11 @@
+import AboutPageTemplate from '../presentation/components/templates/about-page/AboutPageTemplate';
+
 const AboutPage = () => {
-  return <div>About Page</div>;
+  return (
+    <AboutPageTemplate>
+      <></>
+    </AboutPageTemplate>
+  );
 };
 
 export default AboutPage;

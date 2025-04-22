@@ -1,5 +1,5 @@
 import React from 'react';
 
-export interface AboutTemplateProps {
+export interface HomeTemplateProps {
   children: React.ReactNode;
 }

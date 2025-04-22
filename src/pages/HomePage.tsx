@@ -1,10 +1,10 @@
-import AboutTemplate from '../presentation/components/templates/dashboard/AboutTemplate';
+import HomeTemplate from '../presentation/components/templates/dashboard/HomeTemplate';
 
 const HomePage = () => {
   return (
-    <AboutTemplate>
+    <HomeTemplate>
       <></>
-    </AboutTemplate>
+    </HomeTemplate>
   );
 };
 

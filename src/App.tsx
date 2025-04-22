@@ -1,8 +1,8 @@
 import './App.css';
-import HomePage from './pages/HomePage';
 import Navbar from './presentation/components/organism/navbar/Navbar';
 import { navItems } from './data/navItems';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './infrastructure/router/AppRoutes';
 
 function App() {
   return (
@@ -11,10 +11,7 @@ function App() {
         <nav className="w-full bg-neutral-100 text-black">
           <Navbar items={navItems} />
         </nav>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<div />} />
-        </Routes>
+        <AppRoutes />
       </div>
     </BrowserRouter>
   );

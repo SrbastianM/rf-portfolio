@@ -7,12 +7,13 @@ import SliderLanguages from '../../organism/slider-languages/SliderLanguages';
 import { cardInf } from '../../../../data/cardSkillInf';
 import { HomeTemplateProps } from './HomeTemplateProps';
 import { sliderItems } from '../../../../data/sliderItems';
+import { homeInfo } from '../../../../data/homeInfo';
 
 const HomeTemplate: React.FC<HomeTemplateProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex-1 flex flex-col bg-neutral-100">
-        <HeroSection />
+        <HeroSection items={homeInfo} />
         <Card cardInfo={cardInf} />
         {/* <SliderLanguages languages={sliderItems} /> */}
         <main className="flex-1 bg-gray-100 p-6">
@@ -25,6 +26,3 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ children }) => {
 };
 
 export default HomeTemplate;
-{
-  /* <CardProjects /> */
-}

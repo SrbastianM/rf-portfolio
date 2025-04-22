@@ -1,1 +1,3 @@
-export interface AboutPageTemplateProps {}
+export interface AboutPageTemplateProps {
+  children: React.ReactNode;
+}

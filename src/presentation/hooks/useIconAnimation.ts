@@ -6,7 +6,7 @@ export const useIconAnimation = (isActive: boolean) => {
 
   useEffect(() => {
     if (!isActive && iconRef) {
-      animate(`${iconRef}`, {
+      animate(iconRef, {
         scale: [0.8, 1],
         opacity: [0.6, 1],
         rotate: ['0deg', '360deg'],

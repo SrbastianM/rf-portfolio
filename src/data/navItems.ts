@@ -18,7 +18,6 @@ export const navItems: NavItemProps[] = [
       size: 'sm',
     },
     href: '/work',
-    active: true,
   },
   {
     label: {

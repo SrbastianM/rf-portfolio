@@ -1,3 +1,1 @@
-export interface AboutPageTemplateProps {
-  
-}
+export interface AboutPageTemplateProps {}

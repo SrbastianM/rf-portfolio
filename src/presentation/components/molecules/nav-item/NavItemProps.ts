@@ -5,5 +5,5 @@ export interface NavItemProps {
   label: LabelProps;
   icon?: IconProps;
   href?: string;
-  active?: boolean;
+  isActive?: boolean;
 }

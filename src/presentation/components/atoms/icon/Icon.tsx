@@ -12,7 +12,7 @@ const Icon: React.FC<IconProps> = ({
   return (
     <div
       ref={iconRef}
-      className={`flex flex-col items-center justify-center p-4 rounded-lg transition-all ${isActive ? 'bg-gray-100' : ''}`}
+      className={`items-center justify-center background-neutral rounded-lg transition-all ${isActive ? 'bg-gray-100' : ''}`}
       style={{ color }}
     >
       <div className="text-4xl mb-2">

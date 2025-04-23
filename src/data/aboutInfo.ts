@@ -11,7 +11,7 @@ export const aboutInfo: HeroItemProps[] = [
         className: 'text-center mb-14',
       },
       paragraph: {
-        id: "about-paragraph-1",
+        id: 'about-paragraph-1',
         text: `Hello everyone my name is Sebastian a software developer who enjoys open source and constantly learning about the internet and how it is transforming over time, but since you are here I guess you have read this on the main page, so let me talk about my studies and professional experience.
         About 5 years ago I set my eyes on a career in programming and wrote my first “Hello Meow!”. (Yes! it sounds a bit weird but at that moment I felt safe writing this instead of “Hello World”). At that moment I thought, what do I do to schedule every day? I made bad decisions because the answer to that question is: Coding every day!... instead I studied a Technological career in a Colombian institute called S.E.N.A, for a non Colombian person it sounds like a bootcamp or something similar but it's more than that, it's a pretty small step away from being a University for the proletarian people (because it focuses on making workers instead of good programmers).
         Well, I finished that career and I got my first job in the industry as a QA... And for the next three years of my life I was the saddest person in the world...
@@ -24,7 +24,6 @@ export const aboutInfo: HeroItemProps[] = [
         fontWeight: 'lighter',
         fontSize: 'text-lg',
         animated: true,
-        
       },
       shouldAnimate: true,
     },

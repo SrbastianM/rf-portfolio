@@ -1,7 +1,6 @@
 import React from 'react';
 import { SliderLanguagesProps } from './SliderLanguagesProps';
 import { useSlideNavigation } from '../../../hooks/useSlideNavigation';
-import { useSliderAnimation } from '../../../hooks/useSliderAnimation';
 import SliderControls from '../../atoms/slider-controls/SliderControls';
 import SliderElements from '../../molecules/slider-elements/SliderElements';
 import DotsIndicator from '../../atoms/dots-indicator/DotsIndicator';

@@ -1,6 +1,6 @@
-import { ParagraphProps } from "../../atoms/paragraph/ParagraphProps";
-import { TitleProps } from "../../atoms/title/TitleProps";
-import { ButtonProps } from "../button/ButtonProps";
+import { ParagraphProps } from '../../atoms/paragraph/ParagraphProps';
+import { TitleProps } from '../../atoms/title/TitleProps';
+import { ButtonProps } from '../button/ButtonProps';
 
 export interface TextGroupProps {
   paragraph: ParagraphProps & {
@@ -8,7 +8,7 @@ export interface TextGroupProps {
     speed?: number;
     delay?: number;
   };
-  title: TitleProps
+  title: TitleProps;
   button?: ButtonProps;
   shouldAnimate?: boolean;
 }

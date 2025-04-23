@@ -1,5 +1,5 @@
 export interface ParagraphProps {
-  id?: string,
+  id?: string;
   text?: string;
   color?: string;
   fontSize?: string;

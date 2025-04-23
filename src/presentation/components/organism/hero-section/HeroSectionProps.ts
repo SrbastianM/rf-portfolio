@@ -8,5 +8,5 @@ export interface HeroItemProps {
 
 export interface HeroSectionProps {
   items: HeroItemProps[];
-  className?: string
+  className?: string;
 }

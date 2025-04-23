@@ -1,4 +1,4 @@
-import { useEffect} from 'react';
+import { useEffect } from 'react';
 
 interface UseTypewriterAnimationProps {
   text: string;
@@ -9,7 +9,7 @@ interface UseTypewriterAnimationProps {
 
 const useTypewriterAnimation = (
   elementRef: React.RefObject<HTMLElement>,
-  { text, speed = 200, delay = 0, shouldAnimate }: UseTypewriterAnimationProps
+  { text, speed = 200, delay = 0, shouldAnimate }: UseTypewriterAnimationProps,
 ) => {
   useEffect(() => {
     const el = elementRef.current;

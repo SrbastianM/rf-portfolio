@@ -3,6 +3,7 @@ import Navbar from './presentation/components/organism/navbar/Navbar';
 import { navItems } from './data/navItems';
 import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './infrastructure/router/AppRoutes';
+import PageTransition from './presentation/components/organism/page-transition/PageTransition';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <nav className="w-full bg-neutral-100 text-black">
           <Navbar items={navItems} />
         </nav>
-        <AppRoutes />
+        <PageTransition>
+          <AppRoutes />
+        </PageTransition>
       </div>
     </BrowserRouter>
   );

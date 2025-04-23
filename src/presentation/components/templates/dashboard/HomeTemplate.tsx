@@ -1,12 +1,8 @@
 import React from 'react';
 import HeroSection from '../../organism/hero-section/HeroSection';
 import Card from '../../organism/card/Card';
-import CardProjects from '../../organism/card-projects/CardProjects';
-import Title from '../../atoms/title/Title';
-import SliderLanguages from '../../organism/slider-languages/SliderLanguages';
 import { cardInf } from '../../../../data/cardSkillInf';
 import { HomeTemplateProps } from './HomeTemplateProps';
-import { sliderItems } from '../../../../data/sliderItems';
 import { homeInfo } from '../../../../data/homeInfo';
 
 const HomeTemplate: React.FC<HomeTemplateProps> = ({ children }) => {

@@ -1,5 +1,7 @@
+import ContactPageTemplate from '../presentation/components/templates/contact-page/ContactPageTemplate';
+
 const ContactPage = () => {
-  return <div>Contact Page</div>;
+  return <ContactPageTemplate />;
 };
 
 export default ContactPage;

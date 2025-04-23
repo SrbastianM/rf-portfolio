@@ -1,5 +1,5 @@
-import { ImageProps } from "../../atoms/image/ImageProps";
-import { TextGroupProps } from "../../molecules/text-group/TextGroupProps";
+import { ImageProps } from '../../atoms/image/ImageProps';
+import { TextGroupProps } from '../../molecules/text-group/TextGroupProps';
 
 export interface HeroItemProps {
   textGroup: TextGroupProps;
@@ -7,5 +7,6 @@ export interface HeroItemProps {
 }
 
 export interface HeroSectionProps {
-  items: HeroItemProps[]
+  items: HeroItemProps[];
+  className?: string
 }

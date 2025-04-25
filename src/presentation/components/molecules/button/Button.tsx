@@ -2,9 +2,17 @@ import React from 'react';
 import { ButtonProps } from './ButtonProps';
 import Label from '../../atoms/label/Label';
 
-const Button: React.FC<ButtonProps> = ({ onClick, text, className, color, size }) => {
+const Button: React.FC<ButtonProps> = ({
+  onClick,
+  text,
+  className,
+  color,
+  size,
+  type,
+  disabled,
+}) => {
   return (
-    <button onClick={onClick} className={`${className}`}>
+    <button disabled={disabled} onClick={onClick} type={type} className={`${className}`}>
       <Label text={text} color={color} size={size} />
     </button>
   );

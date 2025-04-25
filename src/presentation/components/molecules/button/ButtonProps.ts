@@ -5,5 +5,7 @@ export interface ButtonProps {
   text?: string;
   color?: string;
   className?: string;
+  disabled?: boolean;
   size?: 'sm' | 'md' | 'lg';
+  type?: 'submit' | 'reset' | 'button';
 }

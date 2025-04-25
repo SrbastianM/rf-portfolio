@@ -1,5 +1,8 @@
 import { CardInfoProps } from '../presentation/components/molecules/card-info/CardInfoProps';
 import profile from '../assets/profile.jpeg';
+import mobile from '../assets/mobile.png';
+import web from '../assets/web.png';
+import backend from '../assets/backend.png';
 
 const marginTop = 'mt-1';
 const cardTitleFontSize = 'text-3xl';
@@ -16,7 +19,7 @@ const cardBackendText =
 export const cardInf: CardInfoProps[] = [
   {
     image: {
-      src: profile,
+      src: web,
     },
     paragraph: {
       text: cardWebText,
@@ -31,7 +34,7 @@ export const cardInf: CardInfoProps[] = [
   },
   {
     image: {
-      src: profile,
+      src: mobile,
       rounded: '',
     },
     paragraph: {
@@ -47,7 +50,7 @@ export const cardInf: CardInfoProps[] = [
   },
   {
     image: {
-      src: profile,
+      src: backend,
     },
     paragraph: {
       text: cardBackendText,

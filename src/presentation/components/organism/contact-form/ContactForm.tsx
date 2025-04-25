@@ -7,8 +7,10 @@ import { ContactFormProps } from './ContactFormProps';
 import { CiLinkedin } from 'react-icons/ci';
 import { CiInstagram } from 'react-icons/ci';
 import { SiBluesky } from 'react-icons/si';
+import { useEmailSender } from '../../../hooks/useEmailSender';
 
 const ContactForm: React.FC<ContactFormProps> = ({ items }) => {
+  const { form, isSubmit, submitResult, handleSubmit } = useEmailSender();
   const titleTest = 'Contact';
   const paragraphTest =
     'You can send me an email directly, just enter your name and email address. I will be waiting to give you an answer as soon as possible.You can also see my networks by clicking on the following icons';
@@ -32,20 +34,29 @@ const ContactForm: React.FC<ContactFormProps> = ({ items }) => {
             </ul>
           </div>
         </div>
-
-        <div className="flex flex-col mt-10">
-          {items.map((item, index) => (
-            <Input
-              key={index}
-              label={item.label}
-              type={item.type}
-              className={item.className}
-              placeholder={item.placeholder}
-              id={item.id}
+        <form ref={form} onSubmit={handleSubmit}>
+          <div className="flex flex-col mt-10">
+            {items.map((item, index) => (
+              <Input
+                key={index}
+                label={item.label}
+                type={item.type}
+                className={item.className}
+                placeholder={item.placeholder}
+                id={item.id}
+                name={item.name}
+              />
+            ))}
+            <Button
+              className="px-14 py-6 mt-6 w-50"
+              size="sm"
+              text={isSubmit ? 'Sending...' : 'Contact'}
+              color="black"
+              type="submit"
+              disabled={isSubmit}
             />
-          ))}
-          <Button className="px-14 py-6 mt-6 w-50" size="sm" text="Contact" color="black" />
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   );

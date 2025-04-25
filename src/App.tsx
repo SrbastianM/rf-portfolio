@@ -4,6 +4,7 @@ import { navItems } from './data/navItems';
 import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './infrastructure/router/AppRoutes';
 import PageTransition from './presentation/components/organism/page-transition/PageTransition';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </nav>
         <PageTransition>
           <AppRoutes />
+          <Toaster position="top-center" />
         </PageTransition>
       </div>
     </BrowserRouter>

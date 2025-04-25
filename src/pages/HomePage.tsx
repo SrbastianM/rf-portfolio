@@ -1,4 +1,4 @@
-import HomeTemplate from '../presentation/components/templates/dashboard/HomeTemplate';
+import HomeTemplate from '../presentation/components/templates/home-page/HomeTemplate';
 
 const HomePage = () => {
   return (

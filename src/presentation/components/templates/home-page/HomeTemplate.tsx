@@ -11,7 +11,6 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ children }) => {
       <div className="flex-1 flex flex-col bg-neutral-100">
         <HeroSection items={homeInfo} />
         <Card cardInfo={cardInf} />
-        {/* <SliderLanguages languages={sliderItems} /> */}
         <main className="flex-1 bg-gray-100 p-6">
           <br />
           {children}

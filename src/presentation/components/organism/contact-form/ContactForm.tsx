@@ -15,7 +15,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ items }) => {
   const paragraphTest =
     'You can send me an email directly, just enter your name and email address. I will be waiting to give you an answer as soon as possible.You can also see my networks by clicking on the following icons';
   return (
-    <div className="h-screen flex flex-col justify-center align-middle bg-neutral-100">
+    <div className="h-screen flex flex-col justify-center align-middle ">
       <Title text={titleTest} className="text-6xl" />
       <div className="flex flex-row justify-center space-x-24">
         <div className="min-h-auto flex flex-col mt-10">

@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './infrastructure/router/AppRoutes';
 import PageTransition from './presentation/components/organism/page-transition/PageTransition';
 import { Toaster } from 'react-hot-toast';
+import ParticlesBackground from './presentation/components/ParticulesBackground';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <nav className="w-full bg-neutral-100 text-black">
           <Navbar items={navItems} />
         </nav>
+        <ParticlesBackground variant="particles" />
         <PageTransition>
           <AppRoutes />
           <Toaster position="top-center" />

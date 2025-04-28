@@ -8,10 +8,10 @@ import { homeInfo } from '../../../../data/homeInfo';
 const HomeTemplate: React.FC<HomeTemplateProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="flex-1 flex flex-col bg-neutral-100">
+      <div className="flex-1 flex flex-col">
         <HeroSection items={homeInfo} />
         <Card cardInfo={cardInf} />
-        <main className="flex-1 bg-gray-100 p-6">
+        <main className="flex-1 p-6">
           <br />
           {children}
         </main>

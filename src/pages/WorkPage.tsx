@@ -1,5 +1,7 @@
+import WorkPageTemplate from '../presentation/components/templates/work-page/WorkPageTemplate';
+
 const WorkPage = () => {
-  return <div>Hello</div>;
+  return <WorkPageTemplate />;
 };
 
 export default WorkPage;

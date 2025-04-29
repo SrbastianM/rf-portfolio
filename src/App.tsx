@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './infrastructure/router/AppRoutes';
 import PageTransition from './presentation/components/organism/page-transition/PageTransition';
 import { Toaster } from 'react-hot-toast';
-import ParticlesBackground from './presentation/components/ParticulesBackground';
+import ParticlesBackground from './presentation/components/organism/particles-background/ParticulesBackground';
 
 function App() {
   return (

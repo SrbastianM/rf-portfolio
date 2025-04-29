@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Particles from '@tsparticles/react';
-import { useParticles } from '../hooks/useParticulesBackground';
+import { useParticles } from '../../../hooks/useParticulesBackground';
 
 interface ParticlesBackgroundProps {
   variant?: 'particles' | 'geometric';
@@ -66,7 +66,7 @@ export const ParticlesBackground: FC<ParticlesBackgroundProps> = ({ variant = 'p
                 sync: false,
               },
             },
-            shape: { type: 'circle' },
+            shape: { type: 'triangle' },
             size: {
               value: { min: 1, max: 3 },
             },

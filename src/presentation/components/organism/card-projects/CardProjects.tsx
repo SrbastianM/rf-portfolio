@@ -24,14 +24,20 @@ const CardProjects: React.FC = () => {
       {Object.entries(groupedRepos).map(([language, repoList]) => (
         <div className="lang-title mt-10" key={language}>
           <h2 className="text-3xl font-bold mb-2">{language}</h2>
-          <div className="flex justify-center flex-wrap gap-3">
+          <div className="flex justify-center flex-1/6 gap-3">
             {repoList.map(repo => (
-              <CardInfo
+              <div
                 key={repo.id}
-                className="card-info align-middle m-3 w-40 h-12"
-                paragraph={{ text: '', fontWeight: 'lighter' }}
-                title={{ text: repo.name, className: 'p-2.5' }}
-              />
+                className="cursor-pointer transition-transform transform hover:scale-105"
+                onClick={() => window.open(repo.html_url, '_blank')}
+              >
+                <CardInfo
+                  key={repo.id}
+                  className="card-info align-middle m-3 w-40 h-12"
+                  paragraph={{ text: '', fontWeight: 'lighter' }}
+                  title={{ text: repo.name, className: 'p-2.5' }}
+                />
+              </div>
             ))}
           </div>
         </div>

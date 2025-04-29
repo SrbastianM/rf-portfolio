@@ -5,6 +5,14 @@ const fontLight = 'light: text-black';
 export const navItems: NavItemProps[] = [
   {
     label: {
+      text: 'Home',
+      className: fontLight,
+      size: 'sm',
+    },
+    href: '/',
+  },
+  {
+    label: {
       text: 'About',
       className: fontLight,
       size: 'sm',

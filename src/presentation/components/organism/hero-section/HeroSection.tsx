@@ -5,7 +5,7 @@ import { HeroSectionProps } from './HeroSectionProps';
 const HeroSection: React.FC<HeroSectionProps> = ({ items, className = '' }) => {
   return (
     <section
-      className={`flex flex-col md:flex-row justify-center gap-x-52 items-center px-8 py-16 bg-neutral-100 ${className}`}
+      className={`flex flex-col md:flex-row h-205 justify-center gap-x-52 items-center px-8 py-16  ${className}`}
     >
       {items.map((item, index) => (
         <div key={item.textGroup.paragraph.id || index} className="flex flex-row items-center">

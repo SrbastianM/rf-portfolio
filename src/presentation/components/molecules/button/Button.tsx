@@ -9,6 +9,7 @@ const Button: React.FC<ButtonProps> = ({
   color,
   size,
   type,
+  to,
   disabled,
 }) => {
   return (

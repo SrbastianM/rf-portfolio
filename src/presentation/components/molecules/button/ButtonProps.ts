@@ -6,6 +6,7 @@ export interface ButtonProps {
   color?: string;
   className?: string;
   disabled?: boolean;
+  to?: string,
   size?: 'sm' | 'md' | 'lg';
   type?: 'submit' | 'reset' | 'button';
 }

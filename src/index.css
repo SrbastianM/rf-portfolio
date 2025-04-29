@@ -11,6 +11,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
+  position: relative;
+}
+:root::content {
+  position: relative;
+  z-index: 1;
 }
 
 a {

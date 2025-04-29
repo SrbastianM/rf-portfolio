@@ -22,6 +22,7 @@ export const homeInfo: HeroItemProps[] = [
         size: 'sm',
         text: 'Contact',
         color: 'black',
+        to: '/contact'
       },
     },
     image: {

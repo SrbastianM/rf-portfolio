@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { SliderElementsProps } from './SliderElementsProps';
 import Icon from '../../atoms/icon/Icon';
 import { useSliderElementAnimation } from '../../../hooks/useSliderElementAnimation';

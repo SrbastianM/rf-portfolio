@@ -15,14 +15,14 @@ export const homeInfo: HeroItemProps[] = [
         text: "Hello to everyone my name is Sebastian, a software developer who enjoys open source and constantly learns about the internet and how it's evolving.",
         fontWeight: 'lighter',
         fontSize: 'text-lg',
-        className: 'text-wrap w-2xl mr-10',
+        className: 'text-wrap max-w-2xl',
       },
       button: {
         className: 'px-14 py-6 mt-6',
         size: 'sm',
         text: 'Contact',
         color: 'black',
-        to: '/contact'
+        to: '/contact',
       },
     },
     image: {

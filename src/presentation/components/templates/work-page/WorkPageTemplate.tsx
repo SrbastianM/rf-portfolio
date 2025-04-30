@@ -15,28 +15,28 @@ const WorkPageTemplate: FC<WorkPageTemplateProps> = ({ text }) => {
       <div className="w-full max-w-4xl">
         <ul role="list" className="divide-y divide-gray-300 bg-white rounded-lg shadow-md p-8">
           <div className="mb-4">
-            <p className="text-lg font-bold text-gray-900">Q-vision Technologies</p>
+            <p className="text-lg font-bold text-gray-900 mb-4">Q-vision Technologies</p>
           </div>
           <li className="flex justify-between py-4">
             <div className="flex flex-col justify-start">
-              <p className="text-gray-900">QA</p>
+              <p className="text-gray-900 flex justify-start">QA</p>
               <p className="text-gray-500 text-sm">2 years 7 months</p>
             </div>
           </li>
           <li className="flex justify-between py-4">
             <div className="flex flex-col">
               <p className="text-gray-900">Full Stack Developer</p>
-              <p className="text-gray-500 text-sm">4 Months</p>
+              <p className="text-gray-500 text-sm flex justify-start">4 Months</p>
             </div>
           </li>
 
           <div className="mt-8 mb-4">
-            <p className="text-lg font-bold text-gray-900">CTK Devs</p>
+            <p className="text-lg font-bold text-gray-900 mb-4">CTK Devs</p>
           </div>
           <li className="flex justify-between py-4">
             <div className="flex flex-col">
               <p className="text-gray-900">Contributor</p>
-              <p className="text-gray-500 text-sm">2 years</p>
+              <p className="text-gray-500 text-sm flex justify- mt-1">2 years</p>
             </div>
           </li>
         </ul>

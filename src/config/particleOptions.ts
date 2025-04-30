@@ -8,7 +8,7 @@ const particlesOptions = {
       value: 100,
     },
     color: {
-      value: "#000000",
+      value: '#000000',
     },
   },
 };

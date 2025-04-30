@@ -1,5 +1,4 @@
 import { CardInfoProps } from '../presentation/components/molecules/card-info/CardInfoProps';
-import profile from '../assets/profile.jpeg';
 import mobile from '../assets/mobile.png';
 import web from '../assets/web.png';
 import backend from '../assets/backend.png';

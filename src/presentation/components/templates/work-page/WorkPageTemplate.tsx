@@ -4,7 +4,7 @@ import Title from '../../atoms/title/Title';
 import CardProjects from '../../organism/card-projects/CardProjects';
 import Paragraph from '../../atoms/paragraph/Paragraph';
 
-const WorkPageTemplate: FC<WorkPageTemplateProps> = ({ text }) => {
+const WorkPageTemplate: FC<WorkPageTemplateProps> = () => {
   const paragraph =
     'In this five years, since I started I have created around 60 apps using technologies like Go, React, Kotlin, Flutter. In the next section you can saw a brief cards with the projects: ';
 

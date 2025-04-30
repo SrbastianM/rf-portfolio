@@ -10,7 +10,7 @@ import { SiBluesky } from 'react-icons/si';
 import { useEmailSender } from '../../../hooks/useEmailSender';
 
 const ContactForm: React.FC<ContactFormProps> = ({ items }) => {
-  const { form, isSubmit, submitResult, handleSubmit } = useEmailSender();
+  const { form, isSubmit, handleSubmit } = useEmailSender();
   const titleTest = 'Contact';
   const paragraphTest =
     'You can send me an email directly, just enter your name and email address. I will be waiting to give you an answer as soon as possible.You can also see my networks by clicking on the following icons';

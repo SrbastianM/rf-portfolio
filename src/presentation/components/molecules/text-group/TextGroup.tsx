@@ -27,10 +27,10 @@ const TextGroup: React.FC<TextGroupProps> = ({ paragraph, button, title }) => {
   });
 
   return (
-    <div className="max-w-screen-xl ml-10">
-      <Title className="text-left mb-14" {...title} />
-      <Paragraph ref={paragraphRef} id={id} {...restParagraph} />
-      <div className="flex left-0 mt-4">
+    <div className="w-full px-2 md:px-4">
+      <Title className="text-left mb-4 md:mb-8 lg:mb-14" {...title} />
+      <Paragraph ref={paragraphRef} id={id} className="text-sm md:text-base" {...restParagraph} />
+      <div className="flex mt-4 md:mt-6">
         <Button
           {...button}
           onClick={() => {

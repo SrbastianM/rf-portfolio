@@ -4,13 +4,13 @@ const geometricOptions = {
   },
   particles: {
     shape: {
-      type: "polygon",
+      type: 'polygon',
     },
     number: {
       value: 50,
     },
     color: {
-      value: "#00ff00",
+      value: '#00ff00',
     },
   },
 };

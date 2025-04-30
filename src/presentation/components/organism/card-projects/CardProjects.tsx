@@ -24,7 +24,7 @@ const CardProjects: React.FC = () => {
       {Object.entries(groupedRepos).map(([language, repoList]) => (
         <div className="lang-title mt-10" key={language}>
           <h2 className="text-3xl font-bold mb-2">{language}</h2>
-          <div className="flex justify-center flex-1/6 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {repoList.map(repo => (
               <div
                 key={repo.id}
@@ -33,7 +33,7 @@ const CardProjects: React.FC = () => {
               >
                 <CardInfo
                   key={repo.id}
-                  className="card-info align-middle m-3 w-40 h-12"
+                  className="card-info m-3 w-full"
                   paragraph={{ text: '', fontWeight: 'lighter' }}
                   title={{ text: repo.name, className: 'p-2.5' }}
                 />

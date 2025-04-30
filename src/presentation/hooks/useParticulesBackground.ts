@@ -8,7 +8,7 @@ type Variant = 'particles' | 'geometric';
 
 export const useParticles = (variant: Variant = 'particles') => {
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
+    initParticlesEngine(async engine => {
       await loadFull(engine);
     });
   }, []);

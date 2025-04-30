@@ -1,3 +1,3 @@
 export interface WorkPageTemplateProps {
-  text?: string
+  text?: string;
 }

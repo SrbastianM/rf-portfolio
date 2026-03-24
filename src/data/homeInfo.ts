@@ -12,7 +12,7 @@ export const homeInfo: HeroItemProps[] = [
         className: 'text-left mb-14',
       },
       paragraph: {
-        text: "Hello to everyone my name is Sebastian, a software developer who enjoys open source and constantly learns about the internet and how it's evolving.",
+        text: "Hello everyone, my name is Sebastian. I'm a QA Automation Engineer interested in open source and continuously learning about modern web technologies.",
         fontWeight: 'lighter',
         fontSize: 'text-lg',
         className: 'text-wrap max-w-2xl',

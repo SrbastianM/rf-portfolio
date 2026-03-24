@@ -25,9 +25,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ items }) => {
             <li onClick={() => window.open('https://www.linkedin.com/in/srbastianm/')}>
               <Icon icon={CiLinkedin} size={40} />
             </li>
-            <li onClick={() => window.open('https://www.instagram.com/srbastian_m')}>
-              <Icon icon={CiInstagram} size={40} />
-            </li>
             <li onClick={() => window.open('https://bsky.app/profile/whostenki.bsky.social')}>
               <Icon icon={SiBluesky} size={40} />
             </li>

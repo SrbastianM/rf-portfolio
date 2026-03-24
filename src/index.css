@@ -14,6 +14,7 @@
   z-index: 1;
   position: relative;
 }
+
 :root::content {
   position: relative;
   z-index: 1;
@@ -24,6 +25,7 @@ a {
   color: #070ff0;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #000000;
 }
@@ -35,6 +37,7 @@ h1 {
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -50,6 +53,24 @@ button:focus-visible {
     color: white;
     background-color: #000000;
   }
+
+  button:hover {
+    background-color: grey;
+    transition: 2;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    color: white;
+    background-color: #000000;
+  }
+
   button:hover {
     background-color: grey;
     transition: 2;

@@ -12,7 +12,7 @@ const ExperienceSection: React.FC<ExperienceProps> = () => {
                 </div>
                 <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                        <div className="relative pl-16">
+                        <div className="relative text-center md:text-left md:pl-16">
                             <dt className="text-base/7 font-semibold text-gray-900">UI Testing</dt>
                             <dd className="mt-2 text-base/7 font-light">
                                 Automated UI validation for web applications using Playwright and Selenium.
@@ -20,7 +20,7 @@ const ExperienceSection: React.FC<ExperienceProps> = () => {
                                 components and stable selectors focused on maintainability and scalability
                             </dd>
                         </div>
-                        <div className="relative pl-16">
+                        <div className="relative text-center md:text-left md:pl-16">
                             <dt className="text-base/7 font-semibold text-gray-900">API Testing</dt>
                             <dd className="mt-2 text-base/7 font-light ">
                                 REST API testing using automated frameworks. Validation of response schemas,
@@ -28,7 +28,7 @@ const ExperienceSection: React.FC<ExperienceProps> = () => {
                                 contract validation, and test data management for backend services.
                             </dd>
                         </div>
-                        <div className="relative pl-16">
+                        <div className="relative text-center md:text-left md:pl-16">
                             <dt className="text-base/7 font-semibold text-gray-900">Test Automation</dt>
                             <dd className="mt-2 text-base/7 font-light">
                                 Design of scalable automation frameworks using Java, Python and TypeScript.
@@ -36,7 +36,7 @@ const ExperienceSection: React.FC<ExperienceProps> = () => {
                                 execution by environments. Focus on reliability and fast feedback.
                             </dd>
                         </div>
-                        <div className="relative pl-16">
+                        <div className="relative text-center md:text-left md:pl-16">
                             <dt className="text-base/7 font-semibold text-gray-900">QA Process</dt>
                             <dd className="mt-2 text-base/7 font-light">
                                 Experience across the full QA lifecycle including test planning, test case

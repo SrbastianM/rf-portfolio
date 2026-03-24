@@ -7,7 +7,7 @@ const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex-1 flex flex-col">
-        <HeroSection items={aboutInfo} className=" px-32 justify-between py-2" />
+        <HeroSection items={aboutInfo} className="px-6 md:px-12 lg:px-24 xl:px-32 py-2" />
         {children}
       </div>
     </div>

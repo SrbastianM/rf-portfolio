@@ -5,7 +5,6 @@ import Title from '../../atoms/title/Title';
 import Icon from '../../atoms/icon/Icon';
 import { ContactFormProps } from './ContactFormProps';
 import { CiLinkedin } from 'react-icons/ci';
-import { CiInstagram } from 'react-icons/ci';
 import { SiBluesky } from 'react-icons/si';
 import { useEmailSender } from '../../../hooks/useEmailSender';
 
